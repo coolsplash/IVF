@@ -21,11 +21,22 @@ export default function HomePage() {
       <div className="absolute inset-0 z-0 bg-white/30"></div>
       {/* Header section */}
       <div className="text-center max-w-2xl mx-auto mb-8 relative z-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
+        <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
           Help make a couple's dream come true and bring another child into this world
         </h1>
+        <div className="space-y-2 mb-6">
+          <p className="text-2xl md:text-3xl font-bold text-teal-700">
+            Goal $40,000
+          </p>
+          <p className="text-lg md:text-xl text-slate-700 font-medium">
+            Community Case Endorsed by Rabbi Maoz Harari Raful
+          </p>
+          <p className="text-base md:text-lg text-slate-600 font-semibold uppercase tracking-wide">
+            Tax Deductible
+          </p>
+        </div>
         <p className="text-xl text-slate-600 font-medium">
-          Your contribution helps us make a real difference. Choose your preferred way to give below.
+          Choose your preferred way to give below.
         </p>
       </div>
 
