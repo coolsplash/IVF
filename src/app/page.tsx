@@ -105,6 +105,10 @@ export default function HomePage() {
                 <span className="bg-teal-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">4</span>
                 <span>Send your donation amount</span>
               </li>
+              <li className="flex items-start gap-2">
+                <span className="bg-teal-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">5</span>
+                <span className="font-bold text-slate-900">Must write IVF in the comment for Zelle payments</span>
+              </li>
             </ol>
           </div>
         </div>
