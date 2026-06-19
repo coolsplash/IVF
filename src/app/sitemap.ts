@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export const runtime = 'edge';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://ateretdonations.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://ivf.coolsplash.com';
 
   // Base routes
   const routes = [

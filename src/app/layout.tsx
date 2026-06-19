@@ -16,10 +16,22 @@ const inter = Inter({
   display: 'swap',
 });
 
+const siteTitle =
+  "Help make a couple's dream come true and bring another child into this world";
+
+const siteDescription = `Goal $40,000
+
+Community Case Endorsed by Rabbi Maoz Harari Raful
+
+Tax Deductible`;
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://ivf.coolsplash.com';
+
 export const metadata: Metadata = {
-  title: 'Support Our Cause',
-  description: 'Support our cause with secure donations. Every contribution helps create an unforgettable experience.',
-  keywords: ['donate', 'donation', 'fundraising'],
+  metadataBase: new URL(baseUrl),
+  title: siteTitle,
+  description: siteDescription,
+  keywords: ['donate', 'donation', 'fundraising', 'IVF', 'community'],
   icons: {
     icon: [
       { url: '/favicon.png?v=8' },
@@ -31,9 +43,26 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: 'Support Our Cause',
-    description: 'Support our cause with secure donations. Every contribution helps create an unforgettable experience.',
+    title: siteTitle,
+    description: siteDescription,
     type: 'website',
+    url: baseUrl,
+    siteName: siteTitle,
+    images: [
+      {
+        url: '/og-baby.jpg',
+        width: 1200,
+        height: 630,
+        alt: siteTitle,
+        type: 'image/jpeg',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteTitle,
+    description: siteDescription,
+    images: ['/og-baby.jpg'],
   },
   verification: {
     google: 'lbrSkc-B4r55dJ0kEt6E_QOMtpwR8RE5vNtX7cWmFrM',

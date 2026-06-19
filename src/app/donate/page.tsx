@@ -513,6 +513,15 @@ function DonateForm() {
                   </div>
                 )}
 
+                <div className="rounded-2xl border-2 border-teal-100 bg-gradient-to-br from-teal-50 via-white to-teal-50/50 px-5 py-5 text-center shadow-sm">
+                  <p className="text-slate-600 text-sm font-medium mb-1.5">
+                    Your donation will show up as
+                  </p>
+                  <p className="text-2xl md:text-3xl font-display font-black text-slate-900 tracking-tight">
+                    Kollel Yismach Moshe
+                  </p>
+                </div>
+
                 <div className="flex gap-3 pt-2">
                   <motion.button
                     whileHover={{ scale: 1.02 }}
